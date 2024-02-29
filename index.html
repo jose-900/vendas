@@ -13,6 +13,9 @@
 </head>
 <body>
 <!--javaScript para togge menu-->
+    <script async
+        src="https://js.stripe.com/v3/buy-button.js">
+    </script>
     <script>
         var navLinks = document.getElementById("navLinks");
         function showMenu(){
@@ -34,26 +37,20 @@
          </div>
     </section>
     <!---footer-->
-         
     <section class="footer" id="fooder">
-          <div id="smart-button-container">
-             <div class="whats" id="whats">
-                 <div style="text-align: center;">
-                    <div id="paypal-button-container"></div>
-                  </div>
-                <h5>Pague com Pix</h5>
-                <img  src="qrcode.png"  width="60" height="60">
-                <a href="https://wa.me/5511986244329" target="_blank" >
-                <h6 style="display: flex; justify-content: flex-end; align-items: flex-end;"></h6>
-                <img src="whats5.jpeg" width="60" alt="Fale conosco" title="Fale conosco" >
+         <div id="smart-button-container">
+            <div class="whats" id="whats">
                 </a>
-              </div>  
-           </div>   
-      </div>
+                  <stripe-buy-button
+                  buy-button-id="buy_btn_1OpE8DJBGMeYcARublrGQPEz"
+                  publishable-key="pk_live_51OoaX8JBGMeYcARuPt0GENTJTtWjZZe5TF7r4KdQGNK1hiqvjY8NQiZtjXuyHsPnMRHCQIrTe3GcqVkCVX3bvveZ00UkJEtkTa"
+                     >
+                 </stripe-buy-button>
+                 </div>  
+               </div>   
+        </div>
   </section>
-
   <footer class="footer">
-    
     </div>
     <p>Copyright 2023 | Bitcoin  - Todos direitos reservados</p>
 </footer>
